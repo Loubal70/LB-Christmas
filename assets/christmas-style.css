@@ -1,0 +1,161 @@
+.drop {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+}
+.animate {
+    animation: falling 5.5s infinite ease-in;
+}
+@keyframes falling {
+    0% {
+        top: -10px;
+   }
+    10% {
+        transform: translateX(-5px);
+   }
+    20% {
+        transform: translateX(5px);
+   }
+    30% {
+        transform: translateX(-5px);
+   }
+    40% {
+        transform: translateX(5px);
+   }
+    60% {
+        transform: translateX(-5px);
+   }
+    70% {
+        transform: translateX(5px);
+   }
+    80% {
+        transform: translateX(-5px);
+   }
+    90% {
+        transform: translateX(5px);
+   }
+    95% {
+        opacity: 1;
+   }
+    100% {
+        top: 95vh;
+        opacity: 0;
+   }
+}
+
+
+.christmas-lightrope {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    margin: -15px 0 0 0;
+    padding: 0;
+    pointer-events: none;
+    width: 100%;
+}
+.christmas-lightrope li {
+    position: relative;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 12px;
+    height: 28px;
+    border-radius: 50%;
+    margin: 20px;
+    display: inline-block;
+    background: #fb4545;
+    box-shadow: 5px 0 35px 7px #fb4545;
+    animation-name: flash-1;
+    animation-duration: 1s;
+}
+.christmas-lightrope li:nth-child(2n+1) {
+    background: #0A53DE;
+    box-shadow: 5px 10px 35px 7px #0A53DE;
+    animation-name: flash-2;
+    animation-duration: 0.9s;
+}
+.christmas-lightrope li:nth-child(4n+2) {
+    background: rgba(247, 0, 148, 1);
+    box-shadow: 5px 0 35px 5px rgba(247, 0, 148, 1);
+    animation-name: flash-3;
+    animation-duration: 1.1s;
+}
+.christmas-lightrope li:nth-child(odd) {
+    animation-duration: 1.2s;
+}
+.christmas-lightrope li:nth-child(3n+1) {
+    animation-duration: .8s;
+}
+.christmas-lightrope li:before {
+    content: "";
+    position: absolute;
+    background: #222;
+    width: 10px;
+    height: 9.3333333333px;
+    border-radius: 3px;
+    top: -4.6666666667px;
+    left: 1px;
+}
+.christmas-lightrope li:after {
+    content: "";
+    top: -14px;
+    left: 9px;
+    position: absolute;
+    width: 52px;
+    height: 18.6666666667px;
+    border-bottom: solid #222 2px;
+    border-radius: 50%;
+}
+.christmas-lightrope li:last-child:after {
+    content: none;
+}
+.christmas-lightrope li:first-child {
+    margin-left: -40px;
+}
+@keyframes flash-1 {
+    0% {
+        background: #fb4545;
+        box-shadow: 5px 0 35px 7px #fb4545;
+   }
+   50%{
+    box-shadow: none;
+   }
+    100% {
+        background: rgba(236, 68, 68, 0.9);
+        box-shadow: 5px 0 35px 7px rgba(236, 68, 68, 0.829);
+   }
+}
+@keyframes flash-2 {
+    0% {
+        background: #0A53DE;
+        box-shadow: 5px 10px 35px 5px #0A53DE;
+   }
+   50%{
+    box-shadow: none;
+   }
+    100% {
+        background: #185ad4;
+        box-shadow: 5px 10px 35px 5px #185ad4;
+   }
+}
+@keyframes flash-3 {
+    0% {
+        background: #f53896;
+        box-shadow: 5px 0 35px 8px #f53896;
+   }
+   50%{
+    box-shadow: none;
+   }
+    100% {
+        background: #e42b88;
+        box-shadow: 5px 0 35px 8px #e42b88;
+   }
+}
