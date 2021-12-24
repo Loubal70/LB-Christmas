@@ -50,11 +50,12 @@
 .christmas-lightrope {
     text-align: center;
     white-space: nowrap;
-    overflow: hidden;
+    overflow-x: hidden;
     position: absolute;
     z-index: 1000000000;
     margin: -15px 0 0 0;
     padding: 0;
+    padding-bottom: 30px;
     pointer-events: none;
     width: 100%;
 }
